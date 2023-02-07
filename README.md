@@ -20,3 +20,12 @@ Put your "ideas" in as comments in rust to seed GitHub Copilot, i.e //build add 
 
 
 ## week2
+
+### 1. cargo run
+### 2. make release-arm
+### 3. cargo lambda deploy --iam-role arn:aws:iam::954946645007:role/cargo-lambda-role-8acae8c8-e990-43b0-9057-dcf8d1a6ca7c
+### 4. make invoke OR
+       cargo lambda invoke --remote \
+                --data-ascii '{"name": "Marco"}' \
+                --output-format json \
+                marco-polo-lambda
